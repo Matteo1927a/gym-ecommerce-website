@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <title>Recensioni</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="stile/stile.css" type="text/css" rel="stylesheet">
+  <script src="js/header_auth.js"></script>
+  <script src="js/recensioni.js"></script>
+  <script src="js/menu.js"></script>
+</head>
+
+<body>
+<header>
+  <div class="logo">
+    <img src="immagini/Logo.png" alt="PowerGym logo">
+  </div>
+
+    <!-- icona burger menù -->
+  <button class="burger" id="burgerBtn">
+    &#9776;
+  </button>
+
+ <!-- menù di navigazione -->
+  <nav id="nav" class="nav">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="prodotti.html">Prodotti</a></li>
+      <li><a href="ordini.html">Carrello</a></li>
+      <li><a href="contatti.html">Contatti</a></li>
+    </ul>
+    
+  </nav>
+
+   <button id="loginBtn" class="login_button">Accedi</button>
+  
+
+</header>
+
+  <main class="recensioni-container">
+    <h1 class="recensioni-title">Tutte le recensioni</h1>
+
+    <div class="filtri-recensioni">
+      <select id="filtro-categoria">
+        <option value="">Tutte le categorie</option>
+      </select>
+
+      <select id="filtro-ordine">
+        <option value="">Ordine predefinito</option>
+        <option value="recenti">Più recenti</option>
+      </select>
+    </div>
+
+    <div id="recensioni-list" class="lista-recensioni">
+      <!-- Le recensioni verranno inserite qui dinamicamente -->
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-top">
+
+
+
+      <!-- Logo -->
+      <div class="footer-logo">
+        <img src="immagini/Logo.png" alt="Logo PowerGym">
+      </div>
+
+
+      <!-- Descrizione brand -->
+      <div class="footer-brand">
+        <h3>PowerGym</h3>
+        <p>PowerGym è il tuo punto di riferimento per prodotti di qualità dedicati alla palestra e al fitness.</p>
+      </div>
+
+
+
+      <!-- Contatti -->
+      <div class="footer-section">
+        <h4>Contatti</h4>
+        <p>Email: info@PowerGym.it</p>
+        <p>Telefono: +39 012 345 6789</p>
+        <p>Indirizzo: Via Fitness 123, Milano</p>
+      </div>
+
+      <!-- Link utili -->
+      <div class="footer-section">
+        <h4>Link Utili</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="prodotti.html">Shop</a></li>
+          <li><a href="contatti.html">Contatti</a></li>
+          <li><a href="ordini.html">Carrello</a></li>
+        </ul>
+      </div>
+
+      <!-- Recensioni -->
+      <div class="footer-section">
+        <h4>Recensioni</h4>
+        <p><a href="recensioni.html">Leggi tutte le recensioni</a></p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 PowerGym - <a href="#">Termini e Servizi</a></p>
+    </div>
+  </footer>
+
+
+
+</body>

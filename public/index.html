@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <title>PowerGym</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="stile/stile.css" type="text/css" rel="stylesheet">
+  <script src="js/header_auth.js"></script>
+  <script src="js/index.js"></script>
+  <script src="js/menu.js"></script>
+  <!-- link per inciludere icone google-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+
+
+</head>
+
+<body>
+<header>
+  <div class="logo">
+    <img src="immagini/Logo.png" alt="PowerGym logo">
+  </div>
+
+  <!-- icona burger menù -->
+  <button class="burger" id="burgerBtn">
+    &#9776;
+  </button>
+
+  <!-- menù di navigazione -->
+  <nav id="nav" class="nav">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="prodotti.html">Prodotti</a></li>
+      <li><a href="ordini.html">Carrello</a></li>
+      <li><a href="contatti.html">Contatti</a></li>
+    </ul>
+    
+  </nav>
+
+   <button id="loginBtn" class="login_button">Accedi</button>
+  
+
+</header>
+
+<section class="box_1">
+  <div class="box-section">
+    <h1>Spingi oltre i tuoi limiti</h1>
+    <p><strong>Scopri i nostri migliori attrezzi e integratori per il tuo allenamento</strong></p>
+  <div class="search-bar" id="searchForm">
+  <input type="text" id="search_input" placeholder="Cerca prodotti..." />
+  <span class="material-icons">search</span>
+  <ul id="suggestions" class="suggestions-list"></ul>
+</div>
+  </div>
+   <span class="arrow left material-icons" id="prev">&#xe5cb;</span> <!-- freccia sinistra -->
+  <span class="arrow right material-icons" id="next">&#xe5cc;</span> <!-- freccia destra -->
+</section>
+
+<section class="featured-products">
+  <h2>Prodotti in evidenza</h2>
+  <div class="carousel-container">
+    
+    <button class="carousel-btn left" id="prevBtn">
+      <span class="material-symbols-outlined">chevron_left</span>
+    </button>
+
+    <div class="carousel-viewport">
+      <div class="carousel-track" id="featuredCarousel">
+        <!-- JS crea le product-card -->
+      </div>
+    </div>
+
+    <button class="carousel-btn right" id="nextBtn">
+      <span class="material-symbols-outlined">chevron_right</span>
+    </button>
+
+  </div>
+</section>
+
+
+  <section class="sale-products">
+    <h2>Prodotti in sconto</h2>
+  <div class="carousel-container">
+    <button class="carousel-btn left" id="prevSaleBtn">
+      <span class="material-symbols-outlined">chevron_left</span>
+    </button>
+
+  <div class="carousel-viewport">
+      <div class="carousel-track" id="saleCarousel">
+        <!-- JS crea le product-card -->
+      </div>
+    </div>
+
+   <button class="carousel-btn right" id="nextSaleBtn">
+      <span class="material-symbols-outlined">chevron_right</span>
+    </button>
+  </div>
+</section>
+
+
+
+
+  <footer class="footer">
+    <div class="footer-top">
+
+
+
+      <!-- Logo -->
+      <div class="footer-logo">
+        <img src="immagini/Logo.png" alt="Logo PowerGym">
+      </div>
+
+
+      <!-- Descrizione brand -->
+      <div class="footer-brand">
+        <h3>PowerGym</h3>
+        <p>PowerGym è il tuo punto di riferimento per prodotti di qualità dedicati alla palestra e al fitness.</p>
+      </div>
+
+
+
+      <!-- Contatti -->
+      <div class="footer-section">
+        <h4>Contatti</h4>
+        <p>Email: info@PowerGym.it</p>
+        <p>Telefono: +39 012 345 6789</p>
+        <p>Indirizzo: Via Fitness 123, Milano</p>
+      </div>
+
+      <!-- Link utili -->
+      <div class="footer-section">
+        <h4>Link Utili</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="prodotti.html">Shop</a></li>
+          <li><a href="contatti.html">Contatti</a></li>
+          <li><a href="ordini.html">Carrello</a></li>
+        </ul>
+      </div>
+
+      <!-- Recensioni -->
+      <div class="footer-section">
+        <h4>Recensioni</h4>
+        <p><a href="recensioni.html">Leggi tutte le recensioni</a></p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 PowerGym - <a href="#">Termini e Servizi</a></p>
+    </div>
+  </footer>
+
+</body>
+
+</html>
